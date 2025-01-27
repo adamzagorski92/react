@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+</head>
+<body>
+
+    <!-- JSX -->
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <h1>Hello, React with JSX!</h1>
+            );
+        };
+ 
+        const firstRootElement = document.getElementById('root');
+        ReactDOM.render(<App />, firstRootElement);
+    </script>
+
+
+<div id="root2"></div>
+ 
+    <script type="text/babel">
+        const App2 = () => {
+            const myName = 'Łukasz';
+            const limit = 22;
+ 
+            const someFn = () => {
+                return 37;
+            }
+ 
+            const styles = {
+                color: 'red',
+                backgroundColor: 'yellow'
+            }
+ 
+            return (
+                <div>
+                    
+                    <h1 style={styles} className="mainHeading">Hello, {myName}. Witam! My age is {someFn()}. {limit < 20 ? 'W limicie.' : 'Poza limitem.'}</h1> 
+
+                    <input type="text" id="name" />
+                    <label htmlFor="name">Imię:</label>
+                </div>
+            );
+        };
+ 
+        const secondRootElement = document.getElementById('root2');
+        ReactDOM.render(<App2 />, secondRootElement);
+    </script>
+    
+</body>
+</html>
