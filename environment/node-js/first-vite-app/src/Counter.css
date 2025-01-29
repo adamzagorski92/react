@@ -1,0 +1,32 @@
+.counter {
+    border: 1px solid black;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+.counter button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.counter button:hover {
+    background-color: #4fa3d1;
+    transform: scale(1.1);
+}
+
+.clockControl {
+    text-decoration: underline;
+    cursor: pointer;
+}
