@@ -1,5 +1,10 @@
 const Display = (props) => {
-    return <p>Counter: {props.counter}</p>
+    return (
+    <div>
+    <p>{props.counter} steps are already behind you.</p>
+    </div>
+
+)
 }
 
 export default Display;

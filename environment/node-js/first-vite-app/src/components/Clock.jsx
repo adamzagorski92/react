@@ -23,7 +23,7 @@ const Clock = (props) => {
 
     return (
         <p>
-            {time}{""}
+            {time}{" "}
             <span className="clockControl" onClick={() => props.setShowClock(false)}>x
             </span>
         </p>

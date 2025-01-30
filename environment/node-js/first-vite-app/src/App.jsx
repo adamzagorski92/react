@@ -10,7 +10,7 @@ function App() {
         <Heading text="React counter" classValue="red" />
         <Heading text="Props is great!" classValue="gray" />
       </header>
-      <Counter counterInitValue={20} text='example' />
+      <Counter counterInitValue={0} text='example' />
       <Counter counterInitValue={108}/>
     </div>
   );
