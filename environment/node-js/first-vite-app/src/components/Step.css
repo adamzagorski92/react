@@ -1,0 +1,62 @@
+.step-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin: 20px auto;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .step-container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .step-bar {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4CAF50 0%, #2196F3 100%);
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .step-bar:hover {
+    background: linear-gradient(to right, #66BB6A 0%, #42A5F5 100%);
+  }
+  
+  .step-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .step-bar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .step-bar::-webkit-slider-thumb:hover {
+    border-color: #66BB6A;
+  }
+  
+  .step-bar::-moz-range-thumb:hover {
+    border-color: #66BB6A;
+  }
